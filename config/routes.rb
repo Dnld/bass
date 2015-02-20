@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  
+  resources :album
+  
+  root 'album#index'
+  
   get 'album/index'
 
   get 'album/show'
